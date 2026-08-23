@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>APEX DENTAL CLINIC — Demo</title>
+<meta name="description" content="A modern demo website concept for Apex Dental Clinic, Mansa, Punjab.">
+<style>
+:root{
+  --navy:#102a43;
+  --blue:#1677ff;
+  --light:#f4f8fc;
+  --text:#172b3a;
+  --muted:#64748b;
+  --white:#fff;
+  --line:#e5edf5;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--text);
+  background:var(--white);line-height:1.6;
+}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+nav{
+  position:sticky;top:0;z-index:10;background:rgba(255,255,255,.95);
+  border-bottom:1px solid var(--line);backdrop-filter:blur(8px)
+}
+.nav-inner{height:70px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:20px;font-weight:800;color:var(--navy);letter-spacing:.5px}
+.logo span{color:var(--blue)}
+.nav-links{display:flex;gap:25px;font-size:14px;color:#415568}
+.nav-links a:hover{color:var(--blue)}
+.btn{
+  display:inline-block;background:var(--blue);color:#fff;padding:13px 19px;
+  border-radius:10px;font-weight:700;border:0;cursor:pointer
+}
+.btn.secondary{background:#eaf3ff;color:var(--blue)}
+.hero{background:linear-gradient(135deg,#f5faff,#eaf4ff);padding:80px 0}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.badge{
+  display:inline-block;background:#e2efff;color:#1769d2;border-radius:999px;
+  padding:7px 12px;font-size:13px;font-weight:700;margin-bottom:14px
+}
+h1{font-size:clamp(40px,6vw,68px);line-height:1.02;margin:0 0 20px;color:var(--navy)}
+.hero p{font-size:18px;color:var(--muted);max-width:620px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.hero-card{
+  background:#fff;border-radius:22px;padding:12px;box-shadow:0 20px 60px rgba(16,42,67,.12)
+}
+.hero-art{
+  min-height:360px;border-radius:16px;
+  background:
+    radial-gradient(circle at 30% 30%,#cce5ff 0 15%,transparent 16%),
+    radial-gradient(circle at 75% 65%,#d9f4ff 0 18%,transparent 19%),
+    linear-gradient(145deg,#dceeff,#f9fdff);
+  display:flex;align-items:center;justify-content:center;
+}
+.tooth{font-size:130px;filter:drop-shadow(0 15px 15px rgba(22,119,255,.15))}
+section{padding:78px 0}
+.section-title{text-align:center;margin-bottom:42px}
+.section-title h2{font-size:36px;color:var(--navy);margin:0 0 8px}
+.section-title p{color:var(--muted);margin:0}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{
+  border:1px solid var(--line);border-radius:18px;padding:26px;background:#fff;
+  box-shadow:0 8px 30px rgba(16,42,67,.05)
+}
+.icon{
+  width:48px;height:48px;border-radius:13px;background:#eaf3ff;
+  display:grid;place-items:center;font-size:23px;margin-bottom:15px
+}
+.card h3{margin:0 0 7px;color:var(--navy)}
+.card p{margin:0;color:var(--muted)}
+.about{background:var(--light)}
+.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:45px;align-items:center}
+.about-box{background:#fff;border-radius:22px;padding:35px;box-shadow:0 12px 35px rgba(16,42,67,.06)}
+.check{margin:14px 0;color:#415568}
+.check b{color:var(--navy)}
+.contact{background:var(--navy);color:#fff}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.contact h2{font-size:40px;margin-top:0}
+.contact p{color:#c8d6e5}
+.contact-card{background:#fff;color:var(--text);border-radius:20px;padding:28px}
+.contact-row{padding:15px 0;border-bottom:1px solid var(--line)}
+.contact-row:last-child{border-bottom:0}
+footer{padding:25px 0;text-align:center;color:var(--muted);font-size:13px}
+.demo{background:#fff3cd;color:#725b00;text-align:center;padding:8px 12px;font-size:12px}
+@media(max-width:800px){
+  .nav-links{display:none}
+  .hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .cards{grid-template-columns:1fr}
+  .hero{padding:55px 0}
+  section{padding:58px 0}
+  .hero-art{min-height:280px}
+}
+</style>
+</head>
+<body>
+
+<div class="demo">DEMO CONCEPT — This website is a sample proposal and is not the official website of Apex Dental Clinic.</div>
+
+<nav>
+  <div class="container nav-inner">
+    <div class="logo">APEX <span>DENTAL CLINIC</span></div>
+    <div class="nav-links">
+      <a href="#services">Services</a>
+      <a href="#doctor">Dr. Neha</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="btn" href="#contact">Book / Enquire</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">DENTAL CLINIC • MANSA, PUNJAB</div>
+      <div style="font-size:18px;font-weight:800;color:#1677ff;margin:4px 0 10px;letter-spacing:.3px">DR. NEHA</div>
+      <h1>A healthier smile starts here.</h1>
+      <p>A clean, modern website concept designed to help patients quickly discover the clinic, explore services and get in touch.</p>
+      <div class="actions">
+        <a class="btn" href="tel:08054527765">Call Clinic</a>
+        <a class="btn secondary" href="#contact">View Contact Details</a>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-art"><div class="tooth">🦷</div></div>
+    </div>
+  </div>
+</header>
+
+<section id="services">
+  <div class="container">
+    <div class="section-title">
+      <h2>Dental Care</h2>
+      <p>Services can be customized after the clinic confirms its actual offerings.</p>
+    </div>
+    <div class="cards">
+      <div class="card"><div class="icon">🦷</div><h3>General Dentistry</h3><p>Routine dental consultations and care. Confirm exact services with the clinic.</p></div>
+      <div class="card"><div class="icon">✨</div><h3>Smile Care</h3><p>A dedicated section for smile-related treatments and consultations.</p></div>
+      <div class="card"><div class="icon">🩺</div><h3>Dental Consultation</h3><p>Make it easy for visitors to contact the clinic and ask about treatment options.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="doctor">
+  <div class="container">
+    <div class="section-title">
+      <h2>Meet Dr. Neha</h2>
+      <p>A warm, professional introduction section for the clinic's dentist.</p>
+    </div>
+    <div class="about-box" style="max-width:760px;margin:auto;text-align:center">
+      <div style="font-size:58px;margin-bottom:10px">👩‍⚕️</div>
+      <div style="font-size:28px;font-weight:800;color:var(--navy);font-family:Georgia,serif;font-style:italic">Dr. Neha</div>
+      <p style="color:var(--muted);margin:8px 0 0">
+        Dental Care • Apex Dental Clinic, Mansa
+      </p>
+      <p style="color:var(--muted);font-size:14px">
+        Qualifications, registration details and treatment specialties can be added here after they are confirmed by the clinic.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="about">
+  <div class="container about-grid">
+    <div>
+      <div class="badge">WHY A WEBSITE?</div>
+      <h2 style="font-size:40px;color:var(--navy);margin:10px 0">Make the clinic easier to find online.</h2>
+      <p style="color:var(--muted)">A professional site can put the clinic's services, photos, location and contact options in one place.</p>
+    </div>
+    <div class="about-box">
+      <div class="check">✓ <b>Clear clinic information</b><br><span style="color:#64748b">Name, location and contact details.</span></div>
+      <div class="check">✓ <b>Mobile-friendly design</b><br><span style="color:#64748b">Designed for phones and tablets.</span></div>
+      <div class="check">✓ <b>Easy contact</b><br><span style="color:#64748b">One tap to call the clinic.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container contact-grid">
+    <div>
+      <div class="badge">CONTACT</div>
+      <h2>Ready to make an enquiry?</h2>
+      <p>Use the clinic's verified contact information below. Appointment availability and timings should be confirmed directly with the clinic.</p>
+    </div>
+    <div class="contact-card">
+      <div class="contact-row"><b>📍 Location</b><br>Khoo Wali Gali, Sadar, Mansa, Punjab 151505</div>
+      <div class="contact-row"><b>📞 Phone</b><br><a href="tel:08054527765">080545 27765</a></div>
+      <div class="contact-row"><b>🕒 Hours</b><br>Contact the clinic to confirm current timings.</div>
+      <div style="margin-top:20px"><a class="btn" href="tel:08054527765">Call Now</a></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  © 2026 Apex Dental Clinic — Demo concept. Information should be verified with the clinic before publication.
+</footer>
+</body>
+</html>
